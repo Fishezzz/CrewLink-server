@@ -46,7 +46,8 @@ app.set('view engine', 'pug')
 app.use(morgan('combined'))
 
 let connectionCount = 0;
-let address = process.env.ADDRESS;
+//let address = process.env.ADDRESS;
+let address = "https://amongours.herokuapp.com";
 if (!address) {
 	logger.error('You must set the ADDRESS environment variable.');
 	process.exit(1);
